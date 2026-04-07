@@ -97,6 +97,59 @@
             text-align: center;
             padding: 15px;
         }
+       
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .form-container {
+            width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #2ecc71;
+        }
+
     </style>
 </head>
 
@@ -109,9 +162,8 @@
 
 <nav>
     <a href="#Home">Home</a>
-    <a href="#Subject">Subjects</a>
-    <a href="#Notes">Notes</a>
-    <a href="#Contact">Contact</a>
+    <a href="#Register">Register</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <section>
@@ -152,12 +204,45 @@
                 <a href="https://www.diplomachakhazana.in/p/study-material.html">Download</a>
             </div>
         </div>
-        
+        <div class="form-container" id="Register">
+            <div>
+    
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <label>Gender</label>
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label>Course</label>
+        <select>
+            <option>Computer Science</option>
+            <option>Mathematics</option>
+            <option>Science</option>
+        </select>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number">
+
+        <input type="submit" value="Register" class="btn">
+    </form>
+</div>
+
     </div>
 </section>
 <h1><center>Contact Us :</center></h1>
 <footer>
-    <div class="down" id="contact us"><center>
+    <div class="down" id="contact"><center>
                 <p>Name : Bgagyashri Bharat Gaikwad</p>
                 <p>College : Government Polytechnic, Solapur.</a></p>
                 <p>Course : Diploma in Computer Technology.</p>
